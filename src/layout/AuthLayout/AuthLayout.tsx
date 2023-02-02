@@ -9,10 +9,12 @@ import {
 import styles from './AuthStyles';
 
 type AuthLayoutProps = {
+  title: string;
+  description: string;
   children: React.ReactNode;
 };
 
-const AuthLayout = ({children}: AuthLayoutProps) => {
+const AuthLayout = ({title, description, children}: AuthLayoutProps) => {
   return (
     <KeyboardAvoidingView
       style={styles.container}
@@ -26,11 +28,8 @@ const AuthLayout = ({children}: AuthLayoutProps) => {
           />
         </View>
         <View style={styles.textContainer}>
-          <Text style={styles.title}>Create your e-commerce</Text>
-          <Text style={styles.description}>
-            Prova Vetrina Live gratuitamente per 7 giorni e apri il tuo negozio
-            online in pochi minuti. Nessuna carta di credito richiesta.
-          </Text>
+          <Text style={styles.title}> {title}</Text>
+          <Text style={styles.description}>{description}</Text>
         </View>
         <View>{children}</View>
       </ScrollView>

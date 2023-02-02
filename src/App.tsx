@@ -2,8 +2,8 @@ import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import SignUpScreen from './screens/SignUpScreen/SignUpScreen';
-import LoginScreen from './screens/LoginScreen';
-import ResetPasswordScreen from './screens/ResetPasswordScreen';
+import LoginScreen from './screens/LoginScreen/LoginScreen';
+import ResetPasswordScreen from './screens/ResetPasswordScreen/ResetPasswordScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -12,7 +12,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Signup">
         <Stack.Screen
-          name="SignUp"
+          name="Signup"
           component={SignUpScreen}
           options={{headerShown: false}}
         />

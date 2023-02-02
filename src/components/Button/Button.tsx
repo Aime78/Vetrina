@@ -1,10 +1,13 @@
 import {View, Pressable, Alert, Text} from 'react-native';
 import styles from './styles';
 
-const CustomButton = () => {
+type CustomButtonProps = {
+  title: string;
+};
+const CustomButton = ({title}: CustomButtonProps) => {
   return (
     <Pressable style={styles.container}>
-      <Text style={styles.text}>Create your shop</Text>
+      <Text style={styles.text}>{title}</Text>
     </Pressable>
   );
 };
