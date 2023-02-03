@@ -7,7 +7,10 @@
       "assets/*": ["./src/assets/*"],
       "screens/*": ["./src/screens/*"],
       "layout/*": ["./src/layout/*"],
-      "data/*": ["./src/data/*"]
+      "data/*": ["./src/data/*"],
+      "services/*": ["./src/services/*"],
+      "config/*": ["./src/config/*"],
+      "types/*": ["./src/types/*"]
     }
   }
 }

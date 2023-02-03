@@ -11,13 +11,29 @@ import AuthOContainer from 'components/AuthOContainer/AuthOContainer';
 import styles from './styles';
 import TextPlaceholder from 'components/TextPlaceholder/TextPlaceholder';
 import Support from 'components/Support/Support';
+import signup from 'services/signup';
 
 const SignUpScreen = ({navigation}: any) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const handleNavigate = () => {
-    navigation.navigate('Login');
+  const handleNavigate = () => navigation.navigate('Login');
+
+  const registerUser = async () => {
+    // createUserWithEmailAndPassword(authentication, email, password)
+    //   .then(userCredential => {
+    //     console.log(userCredential);
+    //   })
+    //   .catch(error => {
+    //     const errorCode = error.code;
+    //     const errorMessage = error.message;
+    //     console.log(error);
+    //   });
+    if (!name || !email || !password) return;
+    const userData = {name, email, password};
+    const user = await signup(userData);
+    console.log(user);
+    handleNavigate();
   };
 
   return (
@@ -33,12 +49,13 @@ const SignUpScreen = ({navigation}: any) => {
         />
         <FormInput placeholder="Email" value={email} setValue={setEmail} />
         <FormInput
+          // hideText={true}
           placeholder="Password"
           value={password}
           setValue={setPassword}
         />
       </View>
-      <CustomButton title="Create your shop" />
+      <CustomButton title="Create your shop" handleTask={registerUser} />
       <PlaceHolder />
       <View style={styles.container}>
         <AuthOContainer path={facebook.path} text={facebook.text} />

@@ -3,10 +3,11 @@ import styles from './styles';
 
 type CustomButtonProps = {
   title: string;
+  handleTask?: () => void;
 };
-const CustomButton = ({title}: CustomButtonProps) => {
+const CustomButton = ({title, handleTask}: CustomButtonProps) => {
   return (
-    <Pressable style={styles.container}>
+    <Pressable style={styles.container} onPress={handleTask}>
       <Text style={styles.text}>{title}</Text>
     </Pressable>
   );

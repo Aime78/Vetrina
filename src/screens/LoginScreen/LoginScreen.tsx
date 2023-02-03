@@ -7,13 +7,25 @@ import TextPlaceholder from 'components/TextPlaceholder/TextPlaceholder';
 import {facebook, google} from 'data/authO';
 import AuthLayout from 'layout/AuthLayout/AuthLayout';
 import React, {useState} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
+import login from 'services/login';
 import styles from './styles';
 
 const LoginScreen = ({navigation}: any) => {
-  const [inputValue, setInputValue] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const handleNavigateReset = () => navigation.navigate('Resetpassword');
   const handleNavigateRegister = () => navigation.navigate('Signup');
+  // const handleNavigateDashboard = () => navigation.navigate('Login');
+
+  const loginUser = async () => {
+    if (!email || !password) return;
+    const userData = {email, password};
+    const user = await login(userData);
+    console.log(user);
+    handleNavigateReset();
+  };
+
   return (
     <AuthLayout
       title="Welcome"
@@ -22,16 +34,17 @@ const LoginScreen = ({navigation}: any) => {
       <View>
         <FormInput
           placeholder="Enter your email"
-          value={inputValue}
-          setValue={setInputValue}
+          value={email}
+          setValue={setEmail}
         />
         <FormInput
           placeholder="Enter your password"
-          value={inputValue}
-          setValue={setInputValue}
+          // hideText={true}
+          value={password}
+          setValue={setPassword}
         />
       </View>
-      <CustomButton title="Login" />
+      <CustomButton title="Login" handleTask={loginUser} />
       <PlaceHolder />
       <View style={styles.container}>
         <AuthOContainer path={facebook.path} text={facebook.text} />

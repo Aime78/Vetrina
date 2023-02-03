@@ -6,10 +6,16 @@ import styles from './styles';
 type FormInputProps = {
   value: string;
   placeholder: string;
+  hideText?: boolean;
   setValue: React.Dispatch<React.SetStateAction<string>>;
 };
 
-export const FormInput = ({value, setValue, placeholder}: FormInputProps) => {
+export const FormInput = ({
+  value,
+  setValue,
+  placeholder,
+  hideText,
+}: FormInputProps) => {
   const [inputBorderColor, setInputBorderColor] = useState('#B6BEC6');
   //   const [value, setValue] = useState('');
 
@@ -23,6 +29,7 @@ export const FormInput = ({value, setValue, placeholder}: FormInputProps) => {
         style={styles.input}
         placeholderTextColor={'#B6BEC6'}
         placeholder={placeholder}
+        secureTextEntry={hideText}
         value={value}
         onFocus={handleOnFocus}
         onBlur={handleOnBlur}
