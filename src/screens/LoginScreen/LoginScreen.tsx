@@ -16,14 +16,15 @@ const LoginScreen = ({navigation}: any) => {
   const [password, setPassword] = useState('');
   const handleNavigateReset = () => navigation.navigate('Resetpassword');
   const handleNavigateRegister = () => navigation.navigate('Signup');
-  // const handleNavigateDashboard = () => navigation.navigate('Login');
+  const handleNavigateDashboard = () =>
+    navigation.navigate('Login', {screen: 'Dashboard'});
 
   const loginUser = async () => {
     if (!email || !password) return;
     const userData = {email, password};
     const user = await login(userData);
     console.log(user);
-    handleNavigateReset();
+    handleNavigateDashboard();
   };
 
   return (

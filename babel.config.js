@@ -13,8 +13,11 @@ module.exports = {
           services: './src/services',
           config: './src/config',
           types: './src/types',
+          hooks: './src/hooks',
+          navigation: './src/navigation',
         },
       },
     ],
+    'react-native-reanimated/plugin',
   ],
 };
