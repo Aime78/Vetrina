@@ -13,8 +13,12 @@ import TextPlaceholder from 'components/TextPlaceholder/TextPlaceholder';
 import Support from 'components/Support/Support';
 
 const SignUpScreen = ({navigation}: any) => {
-  const [inputValue, setInputValue] = useState('');
-  const handleNavigate = () => navigation.navigate('Login');
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const handleNavigate = () => {
+    navigation.navigate('Login');
+  };
 
   return (
     <AuthLayout
@@ -24,18 +28,14 @@ const SignUpScreen = ({navigation}: any) => {
       <View>
         <FormInput
           placeholder="Name and Surname"
-          value={inputValue}
-          setValue={setInputValue}
+          value={name}
+          setValue={setName}
         />
-        <FormInput
-          placeholder="Email"
-          value={inputValue}
-          setValue={setInputValue}
-        />
+        <FormInput placeholder="Email" value={email} setValue={setEmail} />
         <FormInput
           placeholder="Password"
-          value={inputValue}
-          setValue={setInputValue}
+          value={password}
+          setValue={setPassword}
         />
       </View>
       <CustomButton title="Create your shop" />
