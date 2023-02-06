@@ -13,7 +13,7 @@ const PrivateScreen = () => (
         component={DashboardScreen}
         options={{
           header: ({navigation}) => (
-            <Header navigation={navigation} showIcons={true} />
+            <Header navigation={navigation} showIcons={false} />
           ),
         }}
       />

@@ -7,6 +7,8 @@ import {
   Latest,
   Marketplace,
   Captera,
+  Customer,
+  Invite,
 } from './components';
 import styles from './styles';
 
@@ -18,19 +20,13 @@ const DashboardScreen = () => {
         <View style={styles.containerConfigura}>
           <Configura />
         </View>
-        <View style={styles.containerVisitors}>
-          <Visitors />
-        </View>
-        <View style={styles.containerOrders}>
-          <Orders />
-        </View>
-        <View style={styles.containerLatest}>
-          <Latest />
-        </View>
-        <View style={styles.containerMarketplace}>
-          <Marketplace />
-        </View>
+        <Visitors />
+        <Orders />
+        <Latest />
+        <Marketplace />
         <Captera />
+        <Customer />
+        <Invite />
       </View>
     </ScrollView>
   );

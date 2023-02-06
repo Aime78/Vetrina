@@ -8,8 +8,6 @@ const styles = StyleSheet.create({
     height: 317,
     paddingVertical: 20,
     display: 'flex',
-    // flexDirection: 'row',
-    // justifyContent: 'center',
   },
   shadow: {
     shadowColor: '#171717',
