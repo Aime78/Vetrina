@@ -15,6 +15,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.3,
     shadowRadius: 3,
   },
+  containerOriginalPrice: {
+    position: 'relative',
+  },
   textHeader: {
     fontSize: 22,
     fontWeight: '600',
@@ -35,10 +38,57 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    padding: 10,
+    paddingLeft: 38,
     fontSize: 18,
     fontWeight: '400',
     color: '#8592A0',
+  },
+  inputContainerTwo: {
+    marginTop: 10,
+    marginBottom: 30,
+    borderRadius: 5,
+    backgroundColor: '#E7E9EC',
+  },
+  inputTwo: {
+    height: 40,
+    paddingLeft: 40,
+    padding: 10,
+    fontSize: 14,
+  },
+  containerOriginal: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    position: 'absolute',
+    top: 22,
+    left: 10,
+  },
+  textOriginal: {
+    fontWeight: '400',
+    fontSize: 14,
+    color: '#103B66',
+  },
+  containerDiscountedPrice: {
+    position: 'relative',
+  },
+  containerDiscounted: {
+    position: 'absolute',
+    zIndex: 1,
+    top: 20,
+    left: 10,
+  },
+  containerFooter: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+  },
+  textFooter: {
+    fontWeight: '400',
+    fontSize: 14,
+    color: '#103B66',
+  },
+  checkbox: {
+    borderWidth: 1,
   },
 });
 

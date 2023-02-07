@@ -20,15 +20,6 @@ const SignUpScreen = ({navigation}: any) => {
   const handleNavigate = () => navigation.navigate('Login');
 
   const registerUser = async () => {
-    // createUserWithEmailAndPassword(authentication, email, password)
-    //   .then(userCredential => {
-    //     console.log(userCredential);
-    //   })
-    //   .catch(error => {
-    //     const errorCode = error.code;
-    //     const errorMessage = error.message;
-    //     console.log(error);
-    //   });
     if (!name || !email || !password) return;
     const userData = {name, email, password};
     const user = await signup(userData);
@@ -49,7 +40,7 @@ const SignUpScreen = ({navigation}: any) => {
         />
         <FormInput placeholder="Email" value={email} setValue={setEmail} />
         <FormInput
-          // hideText={true}
+          hideText={true}
           placeholder="Password"
           value={password}
           setValue={setPassword}

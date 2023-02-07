@@ -15,7 +15,7 @@ const NewProductScreen = () => (
       </View>
     </View>
     <GeneralInfo />
-    {/* <Price /> */}
+    <Price />
   </ScrollView>
 );
 
