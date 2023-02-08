@@ -4,6 +4,8 @@ import DashboardScreen from 'screens/DashboardScreen/DashboardScreen';
 import Header from 'components/Header/Header';
 import ProductsScreen from 'screens/ProductsScreen/ProductsScreen';
 import NewProductScreen from 'screens/NewProductScreen/NewProductScreen';
+import PaymentScreen from 'screens/PaymentScreen/PaymentScreen';
+import OrdersScreen from 'screens/OrdersScreen/OrdersScreen';
 
 const Drawer = createDrawerNavigator();
 
@@ -38,6 +40,24 @@ const PrivateScreen = () => (
         options={{
           header: ({navigation}) => (
             <Header navigation={navigation} name="Products" showIcons={true} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Payment"
+        component={PaymentScreen}
+        options={{
+          header: ({navigation}) => (
+            <Header navigation={navigation} name="Payment" showIcons={false} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Orders"
+        component={OrdersScreen}
+        options={{
+          header: ({navigation}) => (
+            <Header navigation={navigation} name="Orders" showIcons={false} />
           ),
         }}
       />

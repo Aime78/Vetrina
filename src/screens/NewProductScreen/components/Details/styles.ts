@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'white',
     borderRadius: 10,
     width: 370,
-    height: 320,
+    height: 520,
     padding: 20,
   },
   shadow: {
@@ -14,9 +14,6 @@ const styles = StyleSheet.create({
     shadowOffset: {width: -2, height: 4},
     shadowOpacity: 0.3,
     shadowRadius: 3,
-  },
-  containerOriginalPrice: {
-    position: 'relative',
   },
   textHeader: {
     fontSize: 22,
@@ -38,44 +35,45 @@ const styles = StyleSheet.create({
   },
   input: {
     height: 40,
-    paddingLeft: 38,
-    fontSize: 18,
+    paddingLeft: 10,
+    fontSize: 15,
     fontWeight: '400',
     color: '#8592A0',
   },
-  inputContainerTwo: {
-    marginTop: 10,
-    marginBottom: 30,
-    borderRadius: 5,
-    backgroundColor: '#E7E9EC',
-  },
-  inputTwo: {
-    height: 40,
-    paddingLeft: 40,
-    padding: 10,
-    fontSize: 14,
-  },
-  containerOriginal: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 10,
-    position: 'absolute',
-    top: 22,
-    left: 10,
-  },
-  textOriginal: {
-    fontWeight: '400',
-    fontSize: 14,
-    color: '#103B66',
-  },
-  containerDiscountedPrice: {
+  containerCategory: {
     position: 'relative',
   },
-  containerDiscounted: {
+  categoryArrow: {
     position: 'absolute',
-    zIndex: 1,
-    top: 20,
+    top: 45,
+    right: 15,
+  },
+  containerWeight: {
+    position: 'relative',
+  },
+  weightValue: {
+    position: 'absolute',
+    top: 40,
     left: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  containerAvailability: {
+    position: 'relative',
+  },
+  availabilityValue: {
+    position: 'absolute',
+    top: 40,
+    left: 10,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  containerProduct: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   containerFooter: {
     flexDirection: 'row',
@@ -84,7 +82,7 @@ const styles = StyleSheet.create({
   },
   textFooter: {
     fontWeight: '400',
-    fontSize: 14,
+    fontSize: 16,
     color: '#103B66',
   },
   checkbox: {

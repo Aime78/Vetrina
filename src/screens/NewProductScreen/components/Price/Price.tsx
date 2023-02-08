@@ -1,5 +1,4 @@
 import {View, Text, TextInput, Image} from 'react-native';
-import CheckBox from '@react-native-community/checkbox';
 import styles from './style';
 
 const Price = () => (

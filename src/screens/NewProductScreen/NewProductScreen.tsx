@@ -1,5 +1,11 @@
 import {ScrollView, View, Text} from 'react-native';
-import {AllProductsButton, GeneralInfo, Price} from './components';
+import {
+  AllProductsButton,
+  Details,
+  GeneralInfo,
+  Price,
+  ProductType,
+} from './components';
 import styles from './styles';
 
 const NewProductScreen = () => (
@@ -16,6 +22,8 @@ const NewProductScreen = () => (
     </View>
     <GeneralInfo />
     <Price />
+    <Details />
+    <ProductType />
   </ScrollView>
 );
 
