@@ -8,12 +8,7 @@ const styles = StyleSheet.create({
     width: 370,
     height: 610,
   },
-  shadow: {
-    // shadowColor: '#171717',
-    // shadowOffset: {width: -2, height: 4},
-    // shadowOpacity: 0.3,
-    // shadowRadius: 3,
-  },
+
   containerRow: {
     display: 'flex',
     flexDirection: 'row',

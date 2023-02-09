@@ -1,13 +1,32 @@
 import {NavigationContainer} from '@react-navigation/native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import DashboardScreen from 'screens/DashboardScreen/DashboardScreen';
 import Header from 'components/Header/Header';
 import ProductsScreen from 'screens/ProductsScreen/ProductsScreen';
 import NewProductScreen from 'screens/NewProductScreen/NewProductScreen';
 import PaymentScreen from 'screens/PaymentScreen/PaymentScreen';
 import OrdersScreen from 'screens/OrdersScreen/OrdersScreen';
+import OrderScreen from 'screens/OrderScreen/OrderScreen';
+import SubscriptionScreen from 'screens/SubscriptionScreen/SubscriptionScreen';
 
 const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
+
+const OrdersNavigation = () => (
+  <Stack.Navigator initialRouteName="Home">
+    <Stack.Screen
+      name="Home"
+      component={OrdersScreen}
+      options={{headerShown: false}}
+    />
+    <Stack.Screen
+      name="Order"
+      component={OrderScreen}
+      options={{headerShown: false}}
+    />
+  </Stack.Navigator>
+);
 
 const PrivateScreen = () => (
   <NavigationContainer>
@@ -54,10 +73,23 @@ const PrivateScreen = () => (
       />
       <Drawer.Screen
         name="Orders"
-        component={OrdersScreen}
+        component={OrdersNavigation}
         options={{
           header: ({navigation}) => (
-            <Header navigation={navigation} name="Orders" showIcons={false} />
+            <Header navigation={navigation} name="Orders" showIcons={true} />
+          ),
+        }}
+      />
+      <Drawer.Screen
+        name="Subscription"
+        component={SubscriptionScreen}
+        options={{
+          header: ({navigation}) => (
+            <Header
+              navigation={navigation}
+              name="Subscription"
+              showIcons={false}
+            />
           ),
         }}
       />
