@@ -23,7 +23,6 @@ const LoginScreen = ({navigation}: any) => {
     if (!email || !password) return;
     const userData = {email, password};
     const user = await login(userData);
-    console.log(user);
     handleNavigateDashboard();
   };
 

@@ -9,7 +9,7 @@ const Stack = createNativeStackNavigator();
 
 const PublicScreens = () => (
   <NavigationContainer>
-    <Stack.Navigator initialRouteName="Signup">
+    <Stack.Navigator initialRouteName="Login">
       <Stack.Screen
         name="Signup"
         component={SignUpScreen}

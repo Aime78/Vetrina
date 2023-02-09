@@ -2,10 +2,10 @@ import {ScrollView, View, Text, Image} from 'react-native';
 import {OrderHeader, Cliente, ShippingInfo} from './components';
 import styles from './styles';
 
-const OrderScreen = () => {
+const OrderScreen = ({navigation}: any) => {
   return (
     <ScrollView style={styles.container}>
-      <OrderHeader />
+      <OrderHeader navigation={navigation} />
       <View style={styles.containerVariation}>
         <View style={[styles.textContainerInfo, styles.textContainerVariation]}>
           <Text style={styles.textInfo}>Info orders</Text>

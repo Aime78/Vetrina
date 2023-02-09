@@ -9,28 +9,7 @@ import RootNavigation from './navigation';
 const Stack = createNativeStackNavigator();
 
 function App() {
-  return (
-    <RootNavigation />
-    // <NavigationContainer>
-    //   <Stack.Navigator initialRouteName="Signup">
-    //     <Stack.Screen
-    //       name="Signup"
-    //       component={SignUpScreen}
-    //       options={{headerShown: false}}
-    //     />
-    //     <Stack.Screen
-    //       name="Login"
-    //       component={LoginScreen}
-    //       options={{headerShown: false}}
-    //     />
-    //     <Stack.Screen
-    //       name="Resetpassword"
-    //       component={ResetPasswordScreen}
-    //       options={{headerShown: false}}
-    //     />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
-  );
+  return <RootNavigation />;
 }
 
 export default App;
