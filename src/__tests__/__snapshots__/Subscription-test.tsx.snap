@@ -1,0 +1,128 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the all subscription plans of the subscription screen appropriately 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "white",
+        "borderRadius": 10,
+        "height": 140,
+        "justifyContent": "space-between",
+        "marginBottom": 20,
+        "padding": 20,
+        "width": 370,
+      },
+      {
+        "shadowColor": "#171717",
+        "shadowOffset": {
+          "height": 2,
+          "width": 1,
+        },
+        "shadowOpacity": 0.1,
+        "shadowRadius": 3,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#103B66",
+          "fontSize": 20,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Free
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#103B66",
+          "fontSize": 15,
+          "fontWeight": "600",
+        }
+      }
+    >
+      Max 150 prodotti
+    </Text>
+  </View>
+  <Text
+    style={
+      {
+        "color": "#00C48C",
+        "fontSize": 12,
+        "fontWeight": "600",
+        "marginTop": 10,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#103B66",
+          "fontSize": 17,
+          "fontWeight": "600",
+        }
+      }
+    >
+      € 
+      <Text
+        style={
+          {
+            "color": "#21B8F9",
+            "fontSize": 28,
+            "fontWeight": "600",
+          }
+        }
+      >
+        0.00
+      </Text>
+      /year
+    </Text>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#21B8F9",
+          "borderRadius": 5,
+          "height": 46,
+          "justifyContent": "center",
+          "width": 118,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#FFFFFF",
+            "fontSize": 16,
+            "fontWeight": "600",
+          }
+        }
+      >
+        Change plan
+      </Text>
+    </View>
+  </View>
+</View>
+`;

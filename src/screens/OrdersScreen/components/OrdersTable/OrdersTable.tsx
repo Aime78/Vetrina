@@ -6,7 +6,7 @@ const OrdersTable = ({navigation}: any) => {
   const handleNavigate = () => navigation.navigate('Order');
 
   return (
-    <View style={[styles.container, styles.shadow]}>
+    <View style={styles.container}>
       <View style={styles.containerRow}>
         <View style={styles.columnOne}>
           <Image source={require('assets/checkbox.png')} />

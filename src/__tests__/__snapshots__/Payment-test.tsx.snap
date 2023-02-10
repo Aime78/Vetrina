@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the all products button of the new product screen appropriately 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "white",
+        "borderRadius": 10,
+        "height": 150,
+        "justifyContent": "space-between",
+        "marginBottom": 20,
+        "padding": 20,
+        "width": 370,
+      },
+      {
+        "shadowColor": "#171717",
+        "shadowOffset": {
+          "height": 4,
+          "width": -2,
+        },
+        "shadowOpacity": 0.3,
+        "shadowRadius": 3,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+      }
+    }
+  >
+    <View>
+      <Image
+        source={
+          {
+            "testUri": "../../../src/assets/cash.png",
+          }
+        }
+      />
+    </View>
+    <View>
+      <View
+        style={
+          [
+            {
+              "alignItems": "center",
+              "borderRadius": 4,
+              "height": 32,
+              "justifyContent": "center",
+              "width": 80,
+            },
+            {
+              "backgroundColor": "#E0FFF6",
+            },
+          ]
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "fontSize": 14,
+                "fontWeight": "400",
+              },
+              {
+                "color": "#00C48C",
+              },
+            ]
+          }
+        >
+          Disable
+        </Text>
+      </View>
+    </View>
+  </View>
+  <Text
+    style={
+      {
+        "color": "#103B66",
+        "fontSize": 17,
+        "fontWeight": "600",
+      }
+    }
+  >
+    Cash
+  </Text>
+</View>
+`;

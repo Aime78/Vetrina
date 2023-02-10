@@ -1,0 +1,177 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders the children 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 80,
+      },
+      {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    keyboardDismissMode="on-drag"
+  >
+    <View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "display": "flex",
+          }
+        }
+      >
+        <Image
+          alt="logo"
+          source={
+            {
+              "testUri": "../../../src/assets/logo.png",
+            }
+          }
+          style={
+            {
+              "height": 22.88,
+              "width": 155.1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 30,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#103B66",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "textAlign": "center",
+            }
+          }
+        >
+           
+          Title
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#546679",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "marginTop": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Description
+        </Text>
+      </View>
+      <View>
+        <Text>
+          Children
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
+
+exports[`renders the title and description 1`] = `
+<View
+  onLayout={[Function]}
+  style={
+    [
+      {
+        "flex": 1,
+        "paddingLeft": 15,
+        "paddingRight": 15,
+        "paddingTop": 80,
+      },
+      {
+        "paddingBottom": 0,
+      },
+    ]
+  }
+>
+  <RCTScrollView
+    keyboardDismissMode="on-drag"
+  >
+    <View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "display": "flex",
+          }
+        }
+      >
+        <Image
+          alt="logo"
+          source={
+            {
+              "testUri": "../../../src/assets/logo.png",
+            }
+          }
+          style={
+            {
+              "height": 22.88,
+              "width": 155.1,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 30,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#103B66",
+              "fontSize": 28,
+              "fontWeight": "500",
+              "textAlign": "center",
+            }
+          }
+        >
+           
+          Title
+        </Text>
+        <Text
+          style={
+            {
+              "color": "#546679",
+              "fontSize": 18,
+              "fontWeight": "400",
+              "marginTop": 5,
+              "textAlign": "center",
+            }
+          }
+        >
+          Description
+        </Text>
+      </View>
+      <View>
+        <Text>
+          Children
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;
