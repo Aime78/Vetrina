@@ -39,7 +39,7 @@ const LoginScreen = ({navigation}: any) => {
         />
         <FormInput
           placeholder="Enter your password"
-          // hideText={true}
+          hideText={true}
           value={password}
           setValue={setPassword}
         />

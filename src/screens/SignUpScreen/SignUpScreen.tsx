@@ -12,8 +12,7 @@ import styles from './styles';
 import TextPlaceholder from 'components/TextPlaceholder/TextPlaceholder';
 import Support from 'components/Support/Support';
 import signup from 'services/signup';
-import {signOut} from 'firebase/auth';
-import {authentication} from 'config/firebase';
+import handleSignout from 'services/signout';
 
 const SignUpScreen = ({navigation}: any) => {
   const [name, setName] = useState('');
@@ -25,7 +24,7 @@ const SignUpScreen = ({navigation}: any) => {
     if (!name || !email || !password) return;
     const userData = {name, email, password};
     const user = await signup(userData);
-    signOut(authentication);
+    handleSignout();
     handleNavigate();
   };
 
@@ -42,7 +41,7 @@ const SignUpScreen = ({navigation}: any) => {
         />
         <FormInput placeholder="Email" value={email} setValue={setEmail} />
         <FormInput
-          hideText={false}
+          hideText={true}
           placeholder="Password"
           value={password}
           setValue={setPassword}

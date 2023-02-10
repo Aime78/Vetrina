@@ -7,17 +7,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import OrdersScreen from 'screens/OrdersScreen/OrdersScreen';
 import OrderScreen from 'screens/OrderScreen/OrderScreen';
 import Header from 'components/Header/Header';
-import {signOut} from 'firebase/auth';
-import {authentication} from 'config/firebase';
+import handleSignout from 'services/signout';
 
 const Stack = createNativeStackNavigator();
 
-const SignOutButton = () => {
-  const handleSignout = () => {
-    signOut(authentication);
-  };
-  return <DrawerItem label="Sign Out" onPress={() => handleSignout()} />;
-};
+const SignOutButton = () => (
+  <DrawerItem label="Sign Out" onPress={() => handleSignout()} />
+);
 
 export const CustomDrawerContent = (props: any) => {
   return (
